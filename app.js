@@ -66,34 +66,3 @@ fetch(apiURL+'q='+cityName.value+'&appid='+apiKey+'&units='+units+'&lang='+lang)
 
 
 })
-
-
-//"+windSpeedValue+"
-
-
-/*
-
-function showWeatherByLocation(position) {
-
-    fetch(apiURL+"lat="+position.coords.latitude+"&lon="+position.coords.longitude+"&appid="+apiKey+'&units='+units+'&lang='+lang)
-    .then(e => e.json())
-    .then(data => {
-    var tempValue = data['main']['temp'];
-    var iconID = data['weather'][0]['icon'];
-    
-    var nameValue = data['name'];
-    var descValue = data['weather'][0]['description'];
-
-    main.innerHTML = nameValue;
-    desc.innerHTML = descValue;
-    temp.innerHTML = "Temperatura: "+Math.round(tempValue)+"&deg";
-    icon.innerHTML = "<img src=http://openweathermap.org/img/wn/"+iconID+"@2x.png>";
-    
-    cityName.value ="";
-
-    })
-    
-
-}
-
-*/
